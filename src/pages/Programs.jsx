@@ -4,7 +4,7 @@ import PagesLayout from "../layouts/PagesLayout";
 const Programs = () => {
   return (
     <PagesLayout>
-      <h2 className="text-x md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+      <h2 className="text-xl md:text-3xl font-bold text-center mt-6 mb-2 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
         Our Programs
       </h2>
       <div className="flex flex-col md:grid md:grid-cols-2 justify-center items-center px-6 py-4 md:gap-x-6 gap-y-6 ">

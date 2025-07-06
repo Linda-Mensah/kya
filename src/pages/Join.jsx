@@ -5,8 +5,8 @@ const Join = () => {
   return (
     <PagesLayout>
       <div>
-        <h2 className="text-x md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
-          &#10003; GET INVOLVED
+        <h2 className="text-xl md:text-3xl font-bold text-center mt-6 mb-2 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+          &#10003; Get Involved
         </h2>
         <div className="flex flex-col md:flex md:flex-row  gap-x-5 px-8 gap-y-5  py-2 md:py-4 justify-center items-center">
           <div className="px-8 flex flex-col justify-center items-center rounded-lg shadow hover:shadow-lg p-6 transition-shadow duration-300 ease-in-out">

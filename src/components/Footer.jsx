@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="bg-gray-900 text-white px-8 pt-8 pb-2 text-xs">
       <div className="top md:flex md:flex-row justify-around items-center">
-        <div className="flex flex-col items-center justify-center gap-y-2">
+        <div className="flex flex-col items-center justify-center gap-y-2 mb-5">
           <a href="mailto:info@kya-ghana.org">
             {" "}
             <span>
@@ -20,7 +20,7 @@ const Footer = () => {
           </a>
           <span> info@kya-ghana.org</span>
         </div>
-        <div className="flex flex-col items-center justify-center gap-y-2">
+        <div className="flex flex-col items-center justify-center gap-y-2 mb-5">
           <span>
             <LocateIcon className="text-orange-500 hover:text-orange-700 cursor-pointer" />
           </span>

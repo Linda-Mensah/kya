@@ -8,13 +8,13 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="py-2 px-6 md:flex md:justify-between md:items-center bg-gray-900 text-white fixed w-full z-99">
+      <nav className="py-2 px-4 md:flex md:justify-between md:items-center bg-gray-900 text-white fixed w-full z-99">
         <div className="flex justify-between p-2">
           <Link to="/">
             <span>LOGO</span>
           </Link>
 
-          <div className="px-4 cursor-pointer md:hidden">
+          <div className="cursor-pointer md:hidden">
             <MenuIcon onClick={() => setIsOpen(!isOpen)} />
           </div>
         </div>

@@ -63,7 +63,7 @@ const Home = () => {
       </div>
 
       <div className="mt-4 md:flex md:flex-row md:gap-x-8 md:p-8">
-        <div className=" bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition flex flex-col justify-center items-center">
+        <div className="md:w-1/2 bg-white shadow-md rounded-xl mb-5 mx-4 p-4 md:p-6 text-center hover:shadow-lg transition flex flex-col justify-center items-center">
           <UsersIcon className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
           <h2 className="text-x md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
             Who We Are
@@ -83,7 +83,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className=" bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition flex flex-col justify-center items-center">
+        <div className=" md:w-1/2 bg-white shadow-md rounded-xl mx-4 p-4 md:p-6 text-center hover:shadow-lg transition flex flex-col justify-center items-center">
           <HammerIcon className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
           <h2 className="text-x md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
             What We Do
@@ -108,7 +108,7 @@ const Home = () => {
 
       <div className="flex flex-col justify-center items-center mt-6 mb-6">
         <div>
-          <h2 className="text-x md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+          <h2 className="md:text-3xl font-bold text-center mt-6 mb-4 md:m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
             Suppport Our Mission
           </h2>
         </div>

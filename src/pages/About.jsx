@@ -6,7 +6,7 @@ const About = () => {
     <PagesLayout>
       <div className=" flex flex-col md:flex md:flex-row p-8 gap-x-10 items-center justify-center">
         <div className="md:w-1/2 ">
-          <h2 className="text-x md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+          <h2 className="text-xl md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
             About KYA
           </h2>
           <p className="text-center mt-3 md:max-w-[450px]">
