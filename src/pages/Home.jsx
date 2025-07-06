@@ -138,7 +138,7 @@ const Home = () => {
               </p>
             </div>
           </Link>
-          <Link to="/contact">
+          <a href="mailto:info@kya-ghana.org">
             <div
               className="bg-orange-400 text-white  hover:text-orange-500 hover:bg-white hover:border hover:border-orange-500 p-2 md:py-6     md:px-8 flex flex-col items-center justify-center transition ease-in-out duration-300 cursor-pointer"
               aria-label="Contact us"
@@ -149,7 +149,7 @@ const Home = () => {
                 Contact Us
               </p>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </PagesLayout>
