@@ -3,10 +3,16 @@ import Footer from "../components/Footer";
 
 const PagesLayout = ({ children }) => {
   return (
-    <div>
-      <Navbar />
-      {children}
-      <Footer />
+    <div className="flex flex-col h-screen">
+      <div className="mb-16">
+        <Navbar />
+      </div>
+
+      <main className="flex-1">{children}</main>
+
+      <div className="mt-10">
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -1,39 +1,55 @@
 import { Link } from "react-router-dom";
 import PagesLayout from "../layouts/PagesLayout";
-import { GiftIcon, HandshakeIcon, MessageCircle } from "lucide-react";
+import {
+  GiftIcon,
+  HammerIcon,
+  HandshakeIcon,
+  MessageCircle,
+  UsersIcon,
+} from "lucide-react";
 
 const Home = () => {
   return (
     <PagesLayout>
-      <div>
-        <div className=" w-full h-[70vh] md:h-[80vh]">
-          <img
-            src="/images/placeholder.jpg"
-            alt="photo of kintampo"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        <div className="absolute top-1/2 left-1/2 tranform -translate-x-1/2 -translate-y-1/2 text-white text-center max-w-[700px]">
-          <h1 className=" text-xl md:text-4xl font-extrabold text-center mb-3">
-            Welcome to the <br /> Kintampo Youth Association
-          </h1>
-          <p className=" text-base md:text-2xl text-center">
-            Lorem ipsum dolor sit amet consectetur.
+      <div
+        className="relative w-full h-[70vh] md:h-[100vh] bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/placeholder.webp')" }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4 slide-down">
+          <h1 className="text-4xl md:text-6xl font-bold">Welcome to KYA</h1>
+          <p className="mt-4 text-lg md:text-2xl max-w-xl">
+            Unity. Growth. Community.
           </p>
         </div>
       </div>
+      {/* <div className="relative w-full h-[80vh] md:h-[100vh]">
+        <img
+          src="/images/placeholder.webp"
+          alt="photo of kintampo"
+          className="w-full h-full object-cover"
+        />
+
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center max-w-[700px] animate-slide-down">
+          <h1 className="text-xl md:text-5xl font-extrabold text-center mb-3 whitespace-nowrap">
+            Kintampo Youth Association
+          </h1>
+          <p className="text-base md:text-2xl text-center">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </div>
+      </div> */}
 
       <div className="mt-10 px-8 gap-y-3 flex flex-col md:flex md:flex-row md:justify-between md:gap-x-7">
         <div className="md:w-1/2">
           <img
             className="md:h-[350px] w-full object-cover"
-            src="/images/placeholder.jpg"
+            src="/images/placeholder.webp"
             alt=""
           />
         </div>
-        <div className="mt-5 md:w-1/2 md:flex md:flex-col md:justify-center md:items-center ">
-          <h2 className="text-xl text-gray-700 md:text-3xl font-bold text-center mb-6 ">
+        <div className="md:w-1/2 md:flex md:flex-col md:justify-center md:items-center border-1 border-orange-300 md:px-8 px-2 py-10 text-center">
+          <h2 className="text-xl text-gray-700 md:text-3xl font-bold text-center mb-4 ">
             Lorem ipsum.
           </h2>
           <p className="text-sm md:text-l">
@@ -49,8 +65,9 @@ const Home = () => {
       </div>
 
       <div className="mt-4 md:flex md:flex-row md:gap-x-8 md:p-8">
-        <div className="p-8 shadow bg-white">
-          <h2 className="text-xl text-gray-700 md:text-3xl font-bold text-center mb-6 ">
+        <div className=" bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition flex flex-col justify-center items-center">
+          <UsersIcon className="text-orange-500" />
+          <h2 className="text-xl text-gray-700 md:text-3xl font-bold text-center m-4 ">
             Who We Are
           </h2>
           <p className="text-sm md:text-l mb-4">
@@ -59,14 +76,18 @@ const Home = () => {
           </p>
           <div className="flex justify-center items-center">
             <Link to="/about">
-              <button className="px-4 py-1 text-sm font-bold bg-amber-500 text-white hover:bg-white hover:border-1 hover:text-amber-500 transition ease-out duration:500 cursor-pointer">
-                Learn More
+              <button
+                className="px-4 py-3 text-sm font-bold bg-gray-100 text-gray-900 rounded-full hover:bg-white hover:border-1 hover:text-amber-500 transition ease-out duration:500 cursor-pointer"
+                aria-label="Read more about us"
+              >
+                More...
               </button>
             </Link>
           </div>
         </div>
-        <div className="p-8 shadow bg-white">
-          <h2 className="text-xl text-gray-700 md:text-3xl font-bold text-center mb-6">
+        <div className=" bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition flex flex-col justify-center items-center">
+          <HammerIcon className="text-orange-500" />
+          <h2 className="text-xl text-gray-700 md:text-3xl font-bold text-center m-4">
             What We Do
           </h2>
           <p className="text-sm md:text-l mb-4">
@@ -76,8 +97,11 @@ const Home = () => {
           </p>
           <div className="flex justify-center items-center">
             <Link to="/programs">
-              <button className="px-4 py-1 text-sm font-bold bg-amber-500 text-white hover:bg-white hover:border-1 hover:text-amber-500 transition ease-out duration:500 cursor-pointer">
-                See Our Programs
+              <button
+                className="px-4 py-3 text-sm font-bold bg-gray-100 text-gray-900 rounded-full hover:bg-white hover:border-1 hover:text-amber-500 transition ease-out duration:500 cursor-pointer"
+                aria-label="Our programs"
+              >
+                Programs
               </button>
             </Link>
           </div>
@@ -91,26 +115,43 @@ const Home = () => {
           </h2>
         </div>
         <div className="flex flex-row justify-center items-center mt-10 gap-4">
-          <div>
-            <HandshakeIcon className="size-20 text-green-500" />
-            <Link to="/join">
-              <p className="hover:text-amber-500">Join KYA</p>
-            </Link>
-          </div>
+          <Link to="/join">
+            <div
+              className="bg-orange-400 text-white  hover:text-orange-500 hover:bg-white hover:border hover:border-orange-500 p-2 md:py-6     md:px-8 flex flex-col items-center justify-center transition ease-in-out duration-300 cursor-pointer"
+              aria-label="Join KYA"
+            >
+              <HandshakeIcon className="md:size-20 hover:text-orange-500" />
 
-          <div>
-            <GiftIcon className="size-20 text-green-500" />
-            {/* WHERE SHOULD THIS LEAD TO */}
-            <Link>
-              <p className="hover:text-amber-500">Donate</p>
-            </Link>
-          </div>
-          <div>
-            <MessageCircle className="size-20 text-green-500" />
-            <Link to="/contact">
-              <p className="hover:text-amber-500">Contact Us</p>
-            </Link>
-          </div>
+              <p className="cursor-pointer transition ease-out duration:300 text-sm md:text-l font-semibold">
+                Join KYA
+              </p>
+            </div>
+          </Link>
+          {/* WHERE SHOULD THIS LEAD TO */}
+          <Link>
+            <div
+              className="bg-orange-400 text-white  hover:text-orange-500 hover:bg-white hover:border hover:border-orange-500 p-2 md:py-6     md:px-8 flex flex-col items-center justify-center transition ease-in-out duration-300 cursor-pointer"
+              aria-label="Donate"
+            >
+              <GiftIcon className="md:size-20 hover:text-orange-500" />
+
+              <p className="cursor-pointer transition ease-out duration:300 text-sm md:text-l font-semibold">
+                Donate
+              </p>
+            </div>
+          </Link>
+          <Link to="/contact">
+            <div
+              className="bg-orange-400 text-white  hover:text-orange-500 hover:bg-white hover:border hover:border-orange-500 p-2 md:py-6     md:px-8 flex flex-col items-center justify-center transition ease-in-out duration-300 cursor-pointer"
+              aria-label="Contact us"
+            >
+              <MessageCircle className="md:size-20 hover:text-orange-500" />
+
+              <p className="cursor-pointer transition ease-out duration:300 text-sm md:text-l font-semibold">
+                Contact Us
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
     </PagesLayout>
