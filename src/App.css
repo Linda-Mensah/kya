@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", "Quicksand";
   color: rgb(116, 106, 106);
+  /* background: linear-gradient(to bottom, #eff6ff, #ffffff, #dbeafe); */
 }
 
 @keyframes slide-down {
@@ -19,5 +20,5 @@ body {
 }
 
 .slide-down {
-  animation: slide-down 2s ease-out both;
+  animation: slide-down 2s ease-in-out both;
 }

@@ -1,7 +1,6 @@
 import { MenuIcon, PhoneIcon } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="py-2 px-6 md:flex md:justify-between md:items-center bg-[#f4f4f4] text-gray-900 fixed w-full z-99">
+      <nav className="py-2 px-6 md:flex md:justify-between md:items-center bg-gray-900 text-white fixed w-full z-99">
         <div className="flex justify-between p-2">
           <Link to="/">
             <span>LOGO</span>
@@ -20,7 +19,7 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`text-sm font-medium px-2 gap-1 text-gray-900 ${
+          className={`text-sm font-medium px-2 gap-1 text-white ${
             isOpen ? "flex" : "hidden"
           } flex-col items-end md:flex md:flex-row md:items-center md:justify-between md:gap-3`}
         >
@@ -29,7 +28,7 @@ const Navbar = () => {
               className={`transition ease-in-out duration-500 cursor-pointer ${
                 currentPath === "/"
                   ? "text-orange-500 border-b-2 border-orange-500 font-semibol"
-                  : "text-black"
+                  : "text-white"
               }`}
             >
               Home
@@ -41,7 +40,7 @@ const Navbar = () => {
               className={`transition easein--out duration-500 cursor-pointer ${
                 currentPath === "/about"
                   ? "text-orange-500 border-b-2 border-orange-500 font-semibold"
-                  : "text-black"
+                  : "text-white"
               }`}
             >
               About
@@ -53,7 +52,7 @@ const Navbar = () => {
               className={`transition ease-in-out duration-500 cursor-pointer ${
                 currentPath === "/programs"
                   ? "text-orange-500 border-b-2 border-orange-500 font-semibold"
-                  : "text-black"
+                  : "text-text"
               }`}
             >
               Programs
@@ -65,7 +64,7 @@ const Navbar = () => {
               className={`transition ease-in-out duration-500 cursor-pointer ${
                 currentPath === "/join"
                   ? "text-orange-500 border-b-2 border-orange-500 font-semibold"
-                  : "text-black"
+                  : "text-white"
               }`}
             >
               Join

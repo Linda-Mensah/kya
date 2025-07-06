@@ -4,76 +4,62 @@ import {
   Instagram,
   LocateIcon,
   MailIcon,
-  PhoneIcon,
   Twitter,
 } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900 text-white md:flex md:flex-row justify-between py-5 px-10 text-xs">
-      <div className="flex flex-col gap-y-6">
-        <div className="flex flex-col items-center justify-center">
+    <div className="bg-gray-900 text-white px-8 pt-8 pb-2 text-xs">
+      <div className="top md:flex md:flex-row justify-around items-center">
+        <div className="flex flex-col items-center justify-center gap-y-2">
+          <a href="mailto:info@kya-ghana.org">
+            {" "}
+            <span>
+              <MailIcon className="text-orange-500 hover:text-orange-700 cursor-pointer" />
+            </span>
+          </a>
+          <span> info@kya-ghana.org</span>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-y-2">
           <span>
-            <LocateIcon className="size-6 mb-2 hover:text-orange-500 cursor-pointer" />
+            <LocateIcon className="text-orange-500 hover:text-orange-700 cursor-pointer" />
           </span>
           <span className="text-center">
-            Youth Resource Centre, <br />
+            Youth Resource Centre,
+            <br />
             Near Kintampo Municipal Assembly
           </span>
         </div>
-        <div className="flex flex-col items-center justify-center mt-2">
-          <span className="flex flex-col items-center justify-center pointerr-cursor">
-            <a href="mailto:infor@kya.org" aria-label="Send us an email">
-              {" "}
-              <MailIcon className="size-6 mb-2 hover:text-orange-500" />
-            </a>
-          </span>
-          <span> info@kya-ghana.org</span>
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-y-6">
-        <div className="flex flex-col items-center justify-center">
-          <a href="tel:+233200000000" aria-label="Call us">
-            <span className="flex flex-col items-center justify-center">
-              <PhoneIcon className="size-5 mb-2 hover:text-orange-500" />
+        <div className="flex flex-col items-center justify-center gap-y-2">
+          <a href="https://www.kya-ghana-org">
+            <span>
+              <Globe className="text-orange-500 hover:text-orange-700 cursor-pointer" />
             </span>
           </a>
-          <span>+233 20 000 0000</span>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <a
-            href="https://kya-ghana.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit KYA website"
-          >
-            <span className="flex flex-col items-center justify-center">
-              <Globe className="size-6 mb-2 hover:text-orange-500" />
-            </span>
-          </a>
-          <span>https://www.kya-ghana.org</span>
+          <span>www.kya-ghana.org</span>
         </div>
       </div>
-
-      <div className="flex flex-col gap-y-6">
-        <div className="flex flex-col items-center justify-center">
-          <span>
-            <Facebook className="size-5 mb-2" />
-          </span>
-          <span>Facebook</span>
+      <hr className="my-2 text-gray-700" />
+      <div className="flex flex-row justify-between text-[9px]">
+        <div className="flex flex-row gap-x-2">
+          <a href="www.facebook.com">
+            <span>
+              <Facebook className="size-3 hover:text-orange-500" />
+            </span>
+          </a>
+          <a href="www.instagram.com">
+            <span>
+              <Instagram className="size-3 hover:text-orange-500" />
+            </span>
+          </a>
+          <a href="www.twitter.com">
+            <span>
+              <Twitter className="size-3 hover:text-orange-500" />
+            </span>
+          </a>
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <span>
-            <Twitter className="size-6 mb-2" />
-          </span>
-          <span>Twitter</span>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <span>
-            <Instagram className="size-5 mb-2" />
-          </span>
-          <span>Instagram</span>
+        <div>
+          <p>&copy; 2025 Kintampo Youth Association. All rights reserved.</p>
         </div>
       </div>
     </div>

@@ -6,10 +6,10 @@ const About = () => {
     <PagesLayout>
       <div className=" flex flex-col md:flex md:flex-row p-8 gap-x-10 items-center justify-center">
         <div className="md:w-1/2 ">
-          <h2 className="text-xl text-gray-700 md:text-3xl font-bold text-center">
+          <h2 className="text-x md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
             About KYA
           </h2>
-          <p className="text-sm md:text-l md:max-w-[450px] md:mt-8 text-center">
+          <p className="text-center mt-3 md:max-w-[450px]">
             Kintampo Youth Association (KYA) is a grassroots youth organization
             committed to promoting peace, unity, and development in Kintampo.{" "}
             <br />
@@ -20,31 +20,31 @@ const About = () => {
           </p>
         </div>
         <div className="md:w-1/2 flex flex-col mt-5 md:gap-2 ">
-          <h2 className="text-xl text-gray-700 md:text-3xl font-bold text-center mb-4">
+          <h2 className="text-x md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
             &#10003; Serving Kintampo
           </h2>
           <div className="grid grid-cols-2 gap-2 md:gap-4 justify-center items-center ">
             <div className="flex flex-col items-center justify-center text-center shadow p-2 md:p-4 text-sm md:text-l">
               <span>
-                <BrushCleaning className="mb-2 text-orange-500" />
+                <BrushCleaning className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
               </span>
               <span>Clean-Up Exercises</span>
             </div>
             <div className="flex flex-col items-center justify-center text-center shadow p-2 md:p-4 text-sm md:text-l">
               <span>
-                <AwardIcon className="mb-2 text-orange-500" />
+                <AwardIcon className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
               </span>
               <span>Leadership Training</span>
             </div>
             <div className="flex flex-col items-center justify-center text-center shadow p-2 md:p-4 text-sm md:text-l">
               <span>
-                <Globe2 className="mb-2 text-orange-500" />
+                <Globe2 className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
               </span>
               <span>Peace Forums</span>
             </div>
             <div className="flex flex-col items-center justify-center text-center shadow p-2 md:p-4 text-sm md:text-l">
               <span>
-                <Briefcase className="mb-2 text-orange-500" />
+                <Briefcase className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
               </span>
               <span>Business Support</span>
             </div>

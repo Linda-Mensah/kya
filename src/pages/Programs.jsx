@@ -4,14 +4,14 @@ import PagesLayout from "../layouts/PagesLayout";
 const Programs = () => {
   return (
     <PagesLayout>
-      <h2 className="text-xl text-gray-700 md:text-3xl font-bold text-center mb-4 md:mt-6">
+      <h2 className="text-x md:text-3xl font-bold text-center m-4 bg-gradient-to-r from-orange-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">
         Our Programs
       </h2>
-      <div className="flex flex-col md:grid md:grid-cols-2 justify-center items-center px-6 py-4 md:gap-x-6 gap-y-6">
-        <div className="shadow p-6">
+      <div className="flex flex-col md:grid md:grid-cols-2 justify-center items-center px-6 py-4 md:gap-x-6 gap-y-6 ">
+        <div className="shadow hover:shadow-lg p-6 transition-shadow duration-300 ease-in-out">
           <div className="flex flex-col items-center justify-center">
             <span>
-              <Users className="mb-2 text-orange-500" />
+              <Users className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
             </span>
             <span className="font-semibold">
               Unity Forums & Cultural Festivals
@@ -23,10 +23,10 @@ const Programs = () => {
           </p>
         </div>
 
-        <div className="shadow p-6">
-          <div className="flex flex-col items-center justify-center">
+        <div className="shadow hover:shadow-lg p-6 transition-shadow duration-300 ease-in-out">
+          <div className="flex flex-col items-center justify-center ">
             <span>
-              <ToolCaseIcon className="mb-2 text-orange-500" />
+              <ToolCaseIcon className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
             </span>
             <span className="font-semibold">Youth Empowerment Workships</span>
           </div>
@@ -36,10 +36,10 @@ const Programs = () => {
           </p>
         </div>
 
-        <div className="shadow p-6">
+        <div className="shadow hover:shadow-lg p-6 transition-shadow duration-300 ease-in-out">
           <div className="flex flex-col items-center justify-center">
             <span>
-              <HeartHandshake className="mb-2 text-orange-500" />
+              <HeartHandshake className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
             </span>
             <span className="font-semibold">Peace Advocacy Campaigns</span>
           </div>
@@ -49,10 +49,10 @@ const Programs = () => {
           </p>
         </div>
 
-        <div className="shadow p-6">
+        <div className="shadow hover:shadow-lg p-6 transition-shadow duration-300 ease-in-out">
           <div className="flex flex-col items-center justify-center">
             <span>
-              <Home className="mb-2 text-orange-500" />
+              <Home className="bg-orange-500 text-white size-10 rounded-full mb-2 p-2" />
             </span>
             <span className="font-semibold text-center">
               Community Development Projects
